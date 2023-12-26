@@ -1,0 +1,6 @@
+<p>dashboard works!</p>
+<!-- con [] declaramos una entrada hacia el componente, de lo contrario estaria diciendo a la variable text que le asigne n nuevo valor -->
+<h2>Parent text: {{ text }}</h2>
+<app-dashboard-child [(text)]="text" />
+
+<button (click)="handleClick()">Change button</button>
